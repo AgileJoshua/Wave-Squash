@@ -1,0 +1,173 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "RootMenu",
+      "children": [
+        {
+          "id": "1",
+          "name": "Scene 1",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "64",
+                "text": "Wave Squash",
+                "alignment": "center",
+                "size": null,
+                "color": "ffffff",
+                "verticalAlignment": "center",
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 1.0413691997528076,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "2",
+          "name": "Scene 2",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "64",
+                "text": "Play",
+                "alignment": "center",
+                "size": null,
+                "color": null,
+                "verticalAlignment": "center",
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MenuBehavior",
+                "propertyValues": {
+                  "cameraName": {
+                    "type": "string",
+                    "value": "Root"
+                  },
+                  "sceneToOpen": {
+                    "type": "string",
+                    "value": "Scene2"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": -1.2125533819198608,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "3",
+          "name": "BKGR",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "RepeatingBackgroundBehavior",
+                "propertyValues": {
+                  "spriteName": {
+                    "type": "string",
+                    "value": "Visuals/Intro bkg"
+                  },
+                  "animationName": {
+                    "type": "string",
+                    "value": "waves"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -2.9454827308654785,
+            "y": -0.0860000029206276,
+            "z": -2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

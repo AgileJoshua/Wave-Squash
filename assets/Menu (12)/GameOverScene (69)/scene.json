@@ -1,0 +1,267 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "RootMenu",
+      "children": [
+        {
+          "id": "1",
+          "name": "Scene 1",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "64",
+                "text": "Wave Squash",
+                "alignment": "center",
+                "size": null,
+                "color": "ffffff",
+                "verticalAlignment": "center",
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 1.0413691997528076,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "5",
+          "name": "Winner",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "64",
+                "text": "Who won?",
+                "alignment": "center",
+                "size": null,
+                "color": "ff2aea",
+                "verticalAlignment": "center",
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "GameOverBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 2.888503074645996,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "2",
+          "name": "Scene 2",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "64",
+                "text": "Play Again!",
+                "alignment": "center",
+                "size": null,
+                "color": null,
+                "verticalAlignment": "center",
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MenuBehavior",
+                "propertyValues": {
+                  "cameraName": {
+                    "type": "string",
+                    "value": "Camera"
+                  },
+                  "sceneToOpen": {
+                    "type": "string",
+                    "value": "Scene2"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": -1.2125533819198608,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "3",
+          "name": "BKGR",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "RepeatingBackgroundBehavior",
+                "propertyValues": {
+                  "spriteName": {
+                    "type": "string",
+                    "value": "Visuals/Intro bkg"
+                  },
+                  "animationName": {
+                    "type": "string",
+                    "value": "waves"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -2.9454827308654785,
+            "y": -0.0860000029206276,
+            "z": -2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "4",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "orthographic",
+                "fov": 45,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 0.1,
+                "farClippingPlane": 1000
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

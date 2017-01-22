@@ -1,0 +1,377 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "3",
+      "name": "CameraPersp",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "mode": "perspective",
+            "fov": 65,
+            "orthographicScale": 75,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 10,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 100,
+            "formatVersion": 1
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 50,
+        "y": 30,
+        "z": 72
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": false,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "0",
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 75,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 100,
+            "formatVersion": 1
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 63.49471664428711,
+        "y": 34.871849060058594,
+        "z": 41.96968078613281
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "1",
+      "name": "Map",
+      "children": [],
+      "components": [
+        {
+          "type": "TileMapRenderer",
+          "config": {
+            "tileMapAssetId": null,
+            "tileSetAssetId": null,
+            "castShadow": false,
+            "receiveShadow": false,
+            "materialType": "basic",
+            "shaderAssetId": null,
+            "formatVersion": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "tileMap",
+            "movable": true,
+            "width": 1,
+            "height": 1,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": "6",
+            "tileSetPropertyName": null,
+            "layersIndex": "0",
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "2",
+      "name": "Player1",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "19",
+            "animationId": "0",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null,
+            "formatVersion": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 1.5,
+            "height": 1.8,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null,
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "Gamepad",
+            "propertyValues": {}
+          },
+          "id": "3"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "Keyboard",
+            "propertyValues": {}
+          },
+          "id": "4"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "Player",
+            "propertyValues": {
+              "speed": {
+                "type": "number",
+                "value": 0.4
+              },
+              "accelerationForce": {
+                "type": "number",
+                "value": 0
+              },
+              "decelerationTime": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          "id": "7"
+        }
+      ],
+      "position": {
+        "x": 50,
+        "y": 28,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "4",
+      "name": "Ball",
+      "children": [],
+      "components": [
+        {
+          "type": "CannonBody",
+          "config": {
+            "mass": 0,
+            "fixedRotation": false,
+            "shape": "sphere",
+            "halfSize": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            },
+            "radius": 0.2,
+            "height": 1,
+            "formatVersion": 2,
+            "positionOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "orientationOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "segments": 16,
+            "group": 1,
+            "mask": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "20",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null,
+            "formatVersion": 1
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 20,
+        "y": 30,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "6",
+      "name": "Background",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "30",
+            "animationId": "0",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 33.23047138791566,
+        "y": 16.092312195227535,
+        "z": 96.74983215332031
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

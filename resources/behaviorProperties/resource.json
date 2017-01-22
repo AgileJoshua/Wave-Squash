@@ -1,0 +1,152 @@
+{
+  "behaviors": {
+    "MenuBehavior": {
+      "scriptId": "11",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "sceneToOpen",
+          "type": "string"
+        },
+        {
+          "name": "cameraName",
+          "type": "string"
+        }
+      ]
+    },
+    "Gamepad": {
+      "scriptId": "13",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "GamePadID",
+          "type": "number"
+        }
+      ]
+    },
+    "Keyboard": {
+      "scriptId": "22",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "useArrows",
+          "type": "boolean"
+        }
+      ]
+    },
+    "LighterThanAirBehavior": {
+      "scriptId": "25",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "Player": {
+      "scriptId": "14",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "accelerationForce",
+          "type": "number"
+        }
+      ]
+    },
+    "WorldCanonBehavior": {
+      "scriptId": "27",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "CanonPlayer": {
+      "scriptId": "29",
+      "line": 2,
+      "parentBehavior": "Player",
+      "properties": [
+        {
+          "name": "accelerationForce",
+          "type": "number"
+        },
+        {
+          "name": "decelerationTime",
+          "type": "number"
+        },
+        {
+          "name": "playerNumber",
+          "type": "number"
+        }
+      ]
+    },
+    "FaceSpriteAtCamera": {
+      "scriptId": "36",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "rotateItem",
+          "type": "boolean"
+        }
+      ]
+    },
+    "AirShot": {
+      "scriptId": "34",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "direction",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        }
+      ]
+    },
+    "BallLoggerBehavior": {
+      "scriptId": "39",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "IAmABall": {
+      "scriptId": "40",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "IAmASharkBehavior": {
+      "scriptId": "66",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "RepeatingBackgroundBehavior": {
+      "scriptId": "47",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "spriteName",
+          "type": "string"
+        },
+        {
+          "name": "animationName",
+          "type": "string"
+        }
+      ]
+    },
+    "GameOverBehavior": {
+      "scriptId": "70",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}
